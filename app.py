@@ -95,7 +95,7 @@ html_template = """
         <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="upload-section">
                 <label for="file-upload">Upload your images (Max 10 files):</label><br><br>
-                <input type="file" id="file-upload" name="file-upload" accept=".jpeg, .jpg, .png" multiple><br><br>
+                <input type="file" id="file-upload" name="file-upload" accept=".jpeg, .jpg, .png, .gif, .bmp, .tiff, .webp, .ico" multiple><br><br>
                 <button class="btn" type="submit">Convert to PDF</button>
             </div>
         </form>
@@ -142,7 +142,8 @@ html_template = """
         <p>
             &copy; 2025 Snap2PDF. All rights reserved. |
             <a href="/privacy">Privacy Policy</a> |
-            <a href="/contact">Contact Us</a>
+            <a href="/contact">Contact Us</a> |
+            <a href="/support">Support Us</a>
         </p>
     </div>
 
@@ -195,6 +196,62 @@ def privacy_policy():
     </ul>
     <p>If you have any questions, feel free to <a href="/contact">Contact Us</a>.</p>
     """
+
+@app.route('/support')
+def support_us():
+    support_page = """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Support Us</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 20px;
+            }
+            .donation-container {
+                margin: 50px auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                background: #f9f9f9;
+                max-width: 600px;
+                border-radius: 10px;
+            }
+            .donation-container h2 {
+                color: #007bff;
+            }
+            .btn-donate {
+                display: inline-block;
+                padding: 10px 20px;
+                color: white;
+                background: #007bff;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 16px;
+                margin: 20px 0;
+            }
+            .btn-donate:hover {
+                background: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="donation-container">
+            <h2>Support Snap2PDF</h2>
+            <p>If you enjoy using Snap2PDF and want to help us keep it running, consider making a small donation. Every bit helps!</p>
+            <a href="https://paypal.me/yangjunliu" class="btn-donate" target="_blank">
+                Donate via PayPal
+            </a>
+            <p>Thank you for your support! ❤️</p>
+        </div>
+    </body>
+    </html>
+    """
+    return render_template_string(support_page)
 
 @app.route('/contact')
 def contact_us():
