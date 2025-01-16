@@ -16,6 +16,4 @@ A Flask app to convert images to PDF
 
 **Open Source and Privacy**
 
-Snap2PDF is open source, and we value transparency. You can view the source code on this repository. 
-
-All uploaded files are processed locally and are deleted after conversion. 
+Snap2PDF is open source, and we value transparency. All uploaded files are processed locally and are deleted after conversion. 
