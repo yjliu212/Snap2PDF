@@ -9,14 +9,13 @@ A Flask app to convert images to PDF
 
 **Why Convert Images to PDFs?**
 
-Save Space: Combining multiple images into a single PDF can significantly reduce the overall file size, making it easier to store and share.
-
-Improved Organization: PDFs are easier to manage and keep track of compared to individual image files.
-
-Quick Sharing: A single PDF file is much simpler to email or upload than multiple separate images.
-
-Cross-Platform Compatibility: PDFs maintain their formatting across devices and operating systems, ensuring your documents look professional everywhere.
+1. Save Space: Combining multiple images into a single PDF can significantly reduce the overall file size.
+2. Improved Organization: PDFs are easier to manage and keep track of compared to individual image files.
+3. Quick Sharing: A single PDF file is much simpler to email or upload than multiple separate images.
+4. Cross-Platform Compatibility: PDFs maintain their formatting across devices and operating systems.
 
 **Open Source and Privacy**
 
-Snap2PDF is open source, and we value transparency. You can view the source code on our GitHub repository. We prioritize your privacy: uploaded files are processed locally and are deleted after conversion. Rest assured, we do not save or view your files.
+Snap2PDF is open source, and we value transparency. You can view the source code on this repository. 
+
+All uploaded files are processed locally and are deleted after conversion. 
